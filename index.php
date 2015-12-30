@@ -1,3 +1,8 @@
+<?php
+require_once("models/config.php");
+if (!securePage($_SERVER['PHP_SELF'])){die();}
+require_once("models/header.php");
+?>
 <!DOCTYPE html>
 <html lang="bg" >
   <head>
@@ -36,7 +41,7 @@
                     </div>
                             <div class="collapse navbar-collapse"  id="responsive-menu"> 
                                 <ul class="nav navbar-nav" >
-                                    <li><a href="Zanas.html" class="button">За нас</a></li>
+                                    <li><a href="Zanas.php" class="button">За нас</a></li>
                                     <li><a href="#" class="button">Начало</a></li>
                                     <li ><a href="#" class="button" >Галерия</a></li>
                                     <li><a class="button"   href="#" >Видео</a></li>
@@ -44,8 +49,8 @@
                                     <li><a href="#" class="button">Как да...</a></li>
                                 <li class="dropdown" id="dropdown-reg"><a data-toggle="dropdown" href="#"><i class="fa fa-sign-in fa-3x"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Регистрация</a></li>
-                                        <li><a href="#">Вход</a></li>
+                                        <li><a href="register.php">Регистрация</a></li>
+                                        <li><a href="login.php">Вход</a></li>
                                     </ul>
                                 </li>  
                             </ul>
@@ -64,19 +69,10 @@
     
 <div class="content">
     <p>
-     Тъкането е  изкуство, което още от най-ранни времена е занимавало хората.Когато видим съвършенството на орнаментите, хармонията,                   техниката, изглежда че тъкането е едно от най-типичните артистични постижения на креативния талант на нашия народ.
+     Тъкането е  изкуство, което още от най-ранни времена е занимавало хората.Когато видим съвършенството на орнаментите, хармонията,
+	 техниката, изглежда че тъкането е едно от най-типичните артистични постижения на креативния талант на нашия народ.
     </p>
 </div>
-
-           
-       
-
-    
-  
-    
-    
- 
-    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -85,3 +81,4 @@
     
     </body>
 </html>
+
